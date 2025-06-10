@@ -3,7 +3,6 @@
 class RegisterPage {
     constructor(page){
       this.page = page;
-      //  this.generatedEmail = '';
     }
 
     async gotoRegistration() {

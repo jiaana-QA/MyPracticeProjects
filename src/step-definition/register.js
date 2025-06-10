@@ -2,13 +2,7 @@
  const { LoginPage } = require('../pages/LoginPage');
 const { RegisterPage } = require('../pages/RegisterPage');
 
-//  const registerPage = new RegisterPage();
-//  const loginPage = new LoginPage();
-// import { Given,When,Then } from '@cucumber/cucumber';
-// import{Page, Browser, chromium, expect} from "@playwright/test"
-
  let registerPage, loginPage;
-
 
 Given('I open the Magento registration page', {timeout: 20000}, async function () {
   registerPage = new RegisterPage(this.page);

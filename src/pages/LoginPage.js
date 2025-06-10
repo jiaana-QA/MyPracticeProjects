@@ -1,9 +1,9 @@
 const { expect } = require('@playwright/test');
-//  const { generatedEmail } = require('./RegisterPage');
+
 class LoginPage {
 constructor(page, email){
       this.page = page;
-       this.email = email;
+      this.email = email;
     }
   async clickSignInButtonFromHomePage() {
   const signInButton = this.page.locator('a[href*="customer/account/login"]').first(); // "Sign In" link on homepage
